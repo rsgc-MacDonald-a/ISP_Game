@@ -32,7 +32,7 @@ void draw() {
   ellipse(x, 400, 50, 50);
 
   //to stop when it hits the left wall
-  if (x < 75) {
+  if (x < 100) {
     s=0;
   }
 
