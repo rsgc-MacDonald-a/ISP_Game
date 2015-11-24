@@ -32,12 +32,12 @@ void draw() {
   ellipse(x, 400, 50, 50);
 
   //to stop when it hits the left wall
-  if (x < 100) {
+  if (x < 103) {
     s=0;
   }
 
   //to stop climber when it hits the right wall
-  if (x > 420) {
+  if (x > 297) {
     s=0;
   }
 
