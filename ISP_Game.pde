@@ -31,16 +31,26 @@ void draw() {
   fill(60, 250, 50);
   ellipse(x, 400, 50, 50);
 
+  //draw and create position of debree#1
+  fill(50, 100, 50);
+  rect(100, -50, 50, 50);
+
+  //draw and create position of debree#2
+  rect(175, -50, 50, 50);
+
+ //draw and create position of debree#2
+ rect(250, -50, 50, 50);
   //to stop when it hits the left wall
   if (x < 103) {
     s=0;
   }
 
   //to stop climber when it hits the right wall
-  if (x > 297) {
+  if (x > 300) {
     s=0;
   }
-
+  //X coordinate
+  fill(255, 155, 255);
   text('x'+x, 50, 50);
   x = x + s;
 }
