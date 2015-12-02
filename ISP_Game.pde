@@ -21,15 +21,15 @@ void setup() {
   //draw canvas
   size(400, 600);
 
-  // ?
-  x = 300;
-  s = 0;
-  x1=100;
-  y1=-75;
-  x2=175;
-  y2=-500;
-  x3=250;
-  y3=-300;
+
+  x = 300;    //no clue what it does but program does not work without it
+//variables of the debris
+  x1=100;    //x of debris 1
+  y1=-75;    //y of debree 1
+  x2=175;    //x of debris 2
+  y2=-500;   //y of debree 2
+  x3=250;    //x of debris 3
+  y3=-300;   //y of debree 3
 }
 
 void draw() {
@@ -67,15 +67,17 @@ void draw() {
   y1=y1+3;
   y2=y2+3;
   y3=y3+3;
-
+// set debris one back to the top of the screen
   if (y1 > 600) {
-    y1= -50;
+    y1= -175;
   }
+// set debris 2 to the top of the screen  
    if (y2 > 600) {
-    y2= -50;
+    y2= -300;
   }
+// set debris 3 to the top of the screen. 
    if (y3 > 600) {
-    y3= -50;
+    y3= -500;
   }
     //X coordinate
   fill(255, 155, 255);
